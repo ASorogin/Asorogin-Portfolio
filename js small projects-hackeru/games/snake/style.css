@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-color: #383838;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    color: white;
+    margin-right: 5vw;
+}
+
+#board {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    min-height: 200px;
+    background-color: #00000000;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+    display: grid;
+    color: rgb(0, 54, 155);
+  
+}
+
+#board>div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snake {
+    background-color: chartreuse;
+}
+
+.snake-head{
+    background-color: red;
+    border-radius: 35% 0 0 35%;
+}
+
+.fruit::after {
+    content: "🍎";
+    font-size: 15px;
+}
+
+
+#hide {
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.menu > button{
+    color: rebeccapurple;
+    background-color: chartreuse;
+    font-size: 30px;
+    position: relative;
+    margin: 20px;
+}
+.menu > button:hover{
+    background-color: rgb(107, 211, 3);
+    cursor: pointer;
+}
+
+.pause{ 
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #383838a9;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 930px) {
+    h1 {
+        color: white;
+        margin-right: 5vw;
+    }
+    
+    #board {
+        position: relative;
+        width: 80%;
+        max-width: 360px;
+        min-height: 200px;
+        background-color: #00000000;
+        margin:auto;
+        padding: 8px 16px;
+        border-radius: 6px;
+        text-align: center;
+        display: grid;
+        color: rgb(0, 54, 155);
+        left: 20px;
+    }
+    
+    #board>div {
+        height: 8px;
+        width: 8px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fruit::after {
+        font-size: 6px;
+    }
+    
+}

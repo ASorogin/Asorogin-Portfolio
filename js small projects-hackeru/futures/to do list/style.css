@@ -1,0 +1,141 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EED3D9;
+}
+
+.container{
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 85px auto 0;
+    background-color: #F5E8DD;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) ;
+}
+
+.container .input-filed{
+    position: relative;
+    height: 64px;
+    width: 100%;
+}
+
+.input-filed textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 18px 45px 18px 15px;
+    border: 1px solid #CCD3CA;
+    resize: none;
+    cursor: pointer;
+}
+.input-filed textarea:focus{
+    border-color: #B5C0D0;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.input-filed .note-icon{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 24px;
+    color: #B5C0D0;
+}
+
+.input-filed textarea:focus ~ .note-icon{
+    color: #89a4cc;
+}
+
+.container .todolists{
+    max-height: 380px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.todolists .list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #b5c0d038;
+    padding: 20px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.todolists .list input{
+    height: 16px;
+    min-width: 16px;
+    accent-color: #CCD3CA;
+    pointer-events: none;
+}
+
+.todolists .list .task {
+    margin: 0 30px 0 15px;
+    word-break: break-all;
+}
+
+.list input:checked ~ .task{
+    text-decoration: line-through;
+}
+
+.todolists .list i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #B5C0D0;
+    padding: 5px;
+    opacity: 0.6;
+    display: none;
+}
+.todolists .list:hover i{
+    display: inline-flex;
+}
+
+.todolists .list i:hover{
+    opacity: 1;
+}
+
+.container .pending-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.pending-tasks span{
+    color: #B5C0D0;
+    font-size: 16px;
+}
+
+.pending-tasks .clear-button{
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    background: #B5C0D0;
+    color: #F5E8DD;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.clear-button:hover{
+    background: #CCD3CA;
+    color: #89a4cc;
+}

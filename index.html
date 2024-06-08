@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alon Sorogin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/73fb6e4f87.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar" class="nav-collapsed">
+               <img src="images/logo portfolio color.png" class="logo fade-on-load">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <input type="color" id="colorPicker" value="#40A2D8">
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1  class="text first-text">Hi, i'm Alon <span class="lastName">Sorogin</span></h1>
+                <span class="text sec-text"></span>
+            </div>
+        </div>
+    </div>
+   <!-- -----------------ABOUT---------------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me2.png" alt="" class="slide-in">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title fade-in-dark">About Me.</h1>
+                <p class="fade-in-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate maiores rem eum veritatis numquam. Quia quod nisi consectetur ut cupiditate odit debitis vel consequuntur dolor provident magnam doloremque, ipsa molestias quis. Assumenda perspiciatis, laboriosam repellendus minima incidunt sequi expedita cum? Quo, ex veniam. Molestias pariatur ut repellendus. Esse natus repellendus sequi, laborum amet quis accusantium perferendis sint odio suscipit.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web-Develop</span><br>Back-End & Front-End</li>
+                        <li><span>System-Develop</span><br>Back-End & Front-End</li>
+                        <li><span>UI/UX</span><br>Design Web interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>IDF 2021-2023</span><br>Info oragniztion</li>
+                        <li><span>Freelancer 2023-2024</span><br>Portfolio's And Deploy pages</li>
+                        <li><span>Shambaz</span><br>I flip burgers really good</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>High-School</span><br>Exploratory Sciences</li>
+                        <li><span>HackerU</span><br>System-Develop</li>
+                        <li><span>Wingate Institute</span><br>Personal Trainer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -----------SERVICES--------- -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services.</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio adipisci voluptatem perferendis, fuga provident corrupti quo modi aspernatur ratione temporibus vero laborum nesciunt omnis fugit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio adipisci voluptatem perferendis, fuga provident corrupti quo modi aspernatur ratione temporibus vero laborum nesciunt omnis fugit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio adipisci voluptatem perferendis, fuga provident corrupti quo modi aspernatur ratione temporibus vero laborum nesciunt omnis fugit.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- ___________portfolio_____________ -->
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work.</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ousidethebox.png" alt="">
+                <div class="layer">
+                    <h3>Deploy Pages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque?</p>
+                    <a href="projectsPaje.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ScreenshotChess.png" alt="">
+                <div class="layer">
+                    <h3>Java Script</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque?</p>
+                    <a href="projectsPaje.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/draw.png" alt="">
+                <div class="layer">
+                    <h3>And More</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque?</p>
+                    <a href="projectsPaje.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="/projectsPaje.html" class="btn"><span>See More.</span></a>
+    </div>
+   </div>
+
+   <!-- -------------CONTACT------------ -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me.</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> asoroginoffice@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +972 50-555-0689</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.55a47e736efcf2fbfb7d (2).pdf" download class="btn btn2"><span>Download CV</span></a>
+            </div>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" id="myForm" action="https://script.google.com/macros/s/AKfycbwaNHiN32vGPp93FPvHaeSEt46QpR4YWAevW-VEoZF2mlv6NgvFV69gUvHfsDW2H-cy7Q/exec">
+                    <input type="text" name="Name" placeholder="Let me know your full name" required>
+                    <input type="phone" name="Phone" placeholder="What about your phone number?"> 
+                    <input type="email" name="email" placeholder="And your email?" required>
+                    <textarea name="Message" rows="6" placeholder="You can leave your message here"></textarea>
+                    <button type="submit" class="btn btn2 confetti-button"><span>Submit</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alon. Made With lot of  <i class="fa-regular fa-heart"></i>.</p>
+    </div>
+</div>
+
+
+</body>
+</html>

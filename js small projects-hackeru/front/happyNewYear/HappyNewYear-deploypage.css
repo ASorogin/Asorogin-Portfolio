@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#882ee9, #f0bbed);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.text-area {
+    font-family: tektur, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-area h1 {
+    margin-top: 300px;
+}
+
+.form-area {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-area form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 800px;
+}
+
+form .name,
+.email,
+.btn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form .name,
+.email {
+    width: 25vw;
+}
+
+input {
+    line-height: 2;
+    border-radius: 10px;
+    border: 1px solid #33186B;
+}
+
+form .btn {
+    width: 25vw;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+
+form .btn label {
+    visibility: hidden;
+}
+
+::placeholder {
+    color: #33186B;
+}
+
+input[type=button] {
+    background: #7360DF;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background: #553ed8;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    form .name,
+    .email,
+    .btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-area form {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .btn {
+        width: 25vw;
+        padding: 10px 20px;
+    }
+
+    input[type=button] {
+        width: 45vw;
+        height: 30px;
+        background: #7360DF;
+    }
+
+    .text-area h1 {
+        margin-top: 15vh;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .text-area h1 {
+        margin-top: 30vh;
+    }
+
+
+    input[type=button] {
+        height: 30px;
+        background: #7360DF;
+    }
+
+    form.btn {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .form-area form {
+        flex-direction: column;
+        width: auto;
+    }
+
+}

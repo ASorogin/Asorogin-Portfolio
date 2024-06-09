@@ -44,7 +44,7 @@ Disclaimer:
 This is a beta version of the Alon Sorogin Portfolio website and may contain bugs or incomplete features. Use it at your own risk, and feel free to report any issues or suggestions for improvement.
 
 Contact:
-For any inquiries or support, you can reach out to Alon Sorogin via email at asoroginoffice@gmail.com or phone at +972 50-555-0689.
+For any inquiries or support, you can reach out to Alon Sorogin via email at asoroginoffice@gmail.com .
 
 Thank you for visiting!
 We appreciate your interest in Alon Sorogin's portfolio. Stay tuned for updates and enhancements as we continue to improve the website.

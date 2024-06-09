@@ -43,7 +43,6 @@ function createBoard() {
 createBoard();
 
 
-
 const allSquares = document.querySelectorAll(".square");
 
 allSquares.forEach(square => {

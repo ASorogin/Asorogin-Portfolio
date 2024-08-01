@@ -1,11 +1,3 @@
-// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-//   .then(response => {
-//     if(!response.ok){
-//         throw new Error("Could not fetch resource")
-//     } return response.json();
-//   })
-//   .then(data => console.log(data.id))
-//   .catch(error => console.error(error));
 async function fetchData(){
     try {
         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
@@ -29,7 +21,25 @@ async function fetchData(){
             abilityElement.style.display = "block";
         } else {
             console.log("No abilities found for this Pokemon.");
+            abilityElement.style.display = "none";
         }
+
+        const weightElement = document.getElementById("weight");
+        weightElement.textContent = "Weight: " + data.weight;
+        weightElement.style.display = "block";
+
+
+        const heightElement = document.getElementById("height");
+        heightElement.textContent = "Height: " + data.height;
+        heightElement.style.display = "block";
+
+
+        const typeElement = document.getElementById("type");
+        const types = data.types.map(typeInfo => typeInfo.type.name).join(', ');
+        typeElement.textContent = "Type: " + types;
+        typeElement.style.display = "block";
+
+
     } catch(error) {
         console.error(error);
     }

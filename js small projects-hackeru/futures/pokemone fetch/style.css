@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -29,7 +30,7 @@ body {
 .card img {
     display: block;
     margin: 0 auto;
-    max-width: 150px; /* Adjust max-width as needed */
+    max-width: 250px;
 }
 
 .card h2 {

@@ -4,41 +4,38 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
-}
-
-.pokemon-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: #a200ff25;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-.card {
+.pokemon-card, .card {
     background-color: goldenrod;
     border: 3px solid gold;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 200px; 
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
-.card img {
+.pokemon-card img, .card img {
     display: block;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 100%;
+    height: auto;
 }
 
-.card h2 {
+.pokemon-card h2, .card h2 {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
 }
-
 
 input[type="text"] {
     padding: 10px;
@@ -46,6 +43,9 @@ input[type="text"] {
     border-radius: 5px;
     margin-right: 10px;
     font-size: 16px;
+    width: calc(100% - 110px); 
+    max-width: 250px; 
+    box-sizing: border-box;
 }
 
 button {
@@ -56,14 +56,11 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 100px;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-.pokemon-details {
-    margin-top: 20px;
 }
 
 #pokemonSprite {
@@ -71,7 +68,38 @@ button:hover {
     margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
+.suggestions {
     margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card, .pokemon-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 80px); 
+    }
+
 }

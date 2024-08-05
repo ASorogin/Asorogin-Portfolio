@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon Finder</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="pokemonName" placeholder="Enter pokemone name">
-    <button onclick="fetchData()">Fetch pokemone</button><br>
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon name" oninput="filterPokemon()">
+    <button onclick="fetchData()">Fetch Pokémon</button>
+    <div id="suggestions" class="suggestions"></div>
+    <br>
     <div class="card">
-    <img src="" alt="pokemone sprite" id="pokemoneSprite" style="display: none;">
-    <h2 id="ability" style="display: none;">Abillity:</h2>
-    <h2 id="weight" style="display: none;">Weight:</h2>
-    <h2 id="height" style="display: none;">Height:</h2>
-    <h2 id="type" style="display: none;">Type:</h2>
-</div>
+        <img src="" alt="Pokémon sprite" id="pokemonSprite" style="display: none;">
+        <h2 id="ability" style="display: none;">Ability:</h2>
+        <h2 id="weight" style="display: none;">Weight:</h2>
+        <h2 id="height" style="display: none;">Height:</h2>
+        <h2 id="type" style="display: none;">Type:</h2>
+    </div>
 </body>
 </html>
